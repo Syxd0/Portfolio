@@ -19,12 +19,12 @@ const PORTFOLIO_CONFIG = {
   // Project Repositories
   projects: {
     productManagement: {
-      githubUrl: "https://github.com/syed/product-management-system",
+      githubUrl: "https://github.com/Syxd0/product-management-system",
       hasLiveDemo: false, // Set to true and provide liveUrl when deployed
       liveUrl: ""
     },
     slotBooking: {
-      githubUrl: "https://github.com/syed/college-slot-booking-bot",
+      githubUrl: "https://github.com/Syxd0/Saveetha-booking-bot",
       hasLiveDemo: false,
       liveUrl: ""
     }
