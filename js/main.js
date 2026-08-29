@@ -229,5 +229,15 @@ document.addEventListener('DOMContentLoaded', () => {
     emailDisplays.forEach(el => {
       el.textContent = PORTFOLIO_CONFIG.social.email;
     });
+
+    const githubDisplays = document.querySelectorAll('.display-github');
+    githubDisplays.forEach(el => {
+      el.textContent = PORTFOLIO_CONFIG.social.github.replace(/^https?:\/\//, '');
+    });
+
+    const linkedinDisplays = document.querySelectorAll('.display-linkedin');
+    linkedinDisplays.forEach(el => {
+      el.textContent = PORTFOLIO_CONFIG.social.linkedin.replace(/^https?:\/\/(www\.)?/, '');
+    });
   }
 });
