@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Design Tokens & CSS Variables
+   Syed's Developer Portfolio
+   Palette: Warm Cream, Terracotta, Burnt Orange, Warm Brown, Muted Gold, Charcoal
+   ========================================================================== */
+
+:root {
+  /* --- Brand & Accent Colors --- */
+  --color-terracotta: #C85A32;
+  --color-terracotta-hover: #B44E28;
+  --color-terracotta-light: #FBF0EB;
+  --color-terracotta-glow: rgba(200, 90, 50, 0.16);
+
+  --color-burnt-orange: #E07A5F;
+  --color-burnt-orange-dark: #C9664D;
+  --color-burnt-orange-light: #FDF3F0;
+
+  --color-muted-gold: #D4A373;
+  --color-muted-gold-light: #FBF4EC;
+
+  --color-warm-brown: #7A5643;
+  --color-warm-brown-dark: #5C3E2E;
+
+  /* --- Status Colors --- */
+  --color-success: #4E8765;
+  --color-success-bg: #EDF6F0;
+  --color-info: #4A7C99;
+  --color-info-bg: #EEF5F9;
+  --color-warning: #C08535;
+
+  /* --- Light Theme (Default: Warm, Cream, Crisp) --- */
+  --bg-primary: #FAF7F2;
+  --bg-secondary: #F3ECE2;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FCFAF7;
+  --bg-elevated: #FFFFFF;
+  --bg-subtle: #EFE8DD;
+  --bg-code: #1A1715;
+
+  --border-subtle: #E8E0D5;
+  --border-card: #E4DBD0;
+  --border-hover: #D0C3B4;
+  --border-focus: #C85A32;
+
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --text-muted: #847C74;
+  --text-inverse: #FAF7F2;
+  --text-code: #F5EFEB;
+
+  --shadow-sm: 0 1px 3px rgba(40, 25, 15, 0.05);
+  --shadow-md: 0 4px 14px rgba(40, 25, 15, 0.07);
+  --shadow-lg: 0 10px 30px rgba(40, 25, 15, 0.09);
+  --shadow-hover: 0 14px 36px rgba(200, 90, 50, 0.12);
+  --shadow-card: 0 2px 8px rgba(40, 25, 15, 0.04), 0 1px 2px rgba(40, 25, 15, 0.04);
+
+  --badge-bg: #F4ECE3;
+  --badge-text: #684837;
+
+  /* --- Typography --- */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* --- Spacing --- */
+  --space-2xs: 0.25rem;  /* 4px */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 0.75rem;   /* 12px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4.5rem;   /* 72px */
+  --space-4xl: 6rem;     /* 96px */
+
+  /* --- Radii --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 9999px;
+
+  /* --- Layout & Dimensions --- */
+  --container-max-width: 1160px;
+  --container-narrow: 840px;
+  --nav-height: 72px;
+
+  /* --- Transitions --- */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Warm Dark Theme --- */
+[data-theme="dark"] {
+  --bg-primary: #141312;
+  --bg-secondary: #1C1A18;
+  --bg-card: #22201D;
+  --bg-card-hover: #292623;
+  --bg-elevated: #2C2925;
+  --bg-subtle: #2A2724;
+  --bg-code: #0E0D0C;
+
+  --border-subtle: #2F2B27;
+  --border-card: #36322D;
+  --border-hover: #524B43;
+  --border-focus: #E07A5F;
+
+  --text-primary: #FAF7F2;
+  --text-secondary: #C4BBB1;
+  --text-muted: #8E867D;
+  --text-inverse: #141312;
+  --text-code: #F5EFEB;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 14px 36px rgba(224, 122, 95, 0.15);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  --color-terracotta: #E07A5F;
+  --color-terracotta-hover: #EA8C6F;
+  --color-terracotta-light: rgba(224, 122, 95, 0.12);
+  --color-terracotta-glow: rgba(224, 122, 95, 0.22);
+
+  --color-burnt-orange: #E07A5F;
+  --color-burnt-orange-dark: #C9664D;
+  --color-burnt-orange-light: rgba(224, 122, 95, 0.15);
+
+  --color-muted-gold: #E5B282;
+  --color-muted-gold-light: rgba(229, 178, 130, 0.12);
+
+  --color-warm-brown: #BFA594;
+  --color-warm-brown-dark: #9E816F;
+
+  --color-success: #68A882;
+  --color-success-bg: rgba(78, 135, 101, 0.15);
+  --color-info: #6BA5C7;
+  --color-info-bg: rgba(74, 124, 153, 0.15);
+
+  --badge-bg: #2B2824;
+  --badge-text: #E5B282;
+}

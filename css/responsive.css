@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Responsive & Mobile Styles
+   Syed's Developer Portfolio
+   ========================================================================== */
+
+/* --- Tablet Breakpoint (<= 1024px) --- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* --- Small Tablet / Large Mobile Breakpoint (<= 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+    --space-4xl: 4rem;
+    --space-3xl: 3rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-primary);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-xl) var(--space-lg);
+    gap: 1.25rem;
+    border-top: 1px solid var(--border-subtle);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--transition-base), opacity var(--transition-base), visibility var(--transition-base);
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-quick-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --- Mobile Breakpoint (<= 480px) --- */
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .section {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .brand-badge {
+    display: none;
+  }
+
+  .contact-form {
+    padding: 1.25rem;
+  }
+
+  .featured-project-card {
+    padding: 1.25rem;
+  }
+
+  .dev-widget-body {
+    padding: 1rem;
+    font-size: 0.775rem;
+  }
+
+  .toast-notification {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
