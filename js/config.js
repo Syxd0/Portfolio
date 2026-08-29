@@ -12,7 +12,7 @@ const PORTFOLIO_CONFIG = {
   // Social & Contact Placeholders (Easily replace these with your actual URLs/handles)
   social: {
     github: "https://github.com/Syxd0", // Syed's GitHub Profile
-    linkedin: "https://linkedin.com/in/syed", // Update with your actual LinkedIn profile
+    linkedin: "https://www.linkedin.com/in/syed-najmuddin-33bb68364", // Syed's LinkedIn Profile
     email: "technajju@gmail.com" // Syed's Contact Email
   },
 
